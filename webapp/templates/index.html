@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Live Sensor Data</title>
+
+<!-- template from 
+https://bootsnipp.com/snippets/featured/ui-card-design-css -->
+
+<link href="/static/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="/static/style.css" rel="stylesheet">
+<script src="bootstrap.min.js"></script>
+<script src="jquery-1.11.1.min.js"></script>
+
+</head>
+
+
+  <body>
+
+<link rel="stylesheet" href="/static/font-awesome.min.css">
+<div class="card">
+    <div class="box">
+        <div class="img">
+            <img src="/static/greenhouse.jpg">
+        </div>
+        <h2>Smart sensor<br><span>Demo installation</span></h2>
+        <p> <b>Humidity</b> is <font color="{{ hColor }}">{{ humidity }}</font></p>
+	<p> <b>Temperature</b> is <font color="{{ tColor }}">{{ temperature }}&deg;C</font></p>
+	<p> <b>IR Light</b> is {{ irLight }} lux </p>
+	<p> <b>Visible Light</b> is {{ visLight }} lux </p>
+	
+
+     <h2>More Info</h2>
+	<p>For more details, please contact <a href="mailto:a.lawson@napier.ac.uk">Alistair Lawson</a> from the <a href="https://www.napier.ac.uk/people/alistair-lawson">School of Computing</a>.
+
+	  <p>Code available on <a href="https://github.com/jeremysinger/smart-greenhouse">github</a></p>.
+
+	
+    </div>
+</div>
+
+	<hr>
+	  <img align="center" src="/static/lion.png" width="200" height="105" alt="[Lion]">
+
+
+</body>
+</html>
